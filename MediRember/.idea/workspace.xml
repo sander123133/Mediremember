@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6524b21f-a55f-4777-92bd-37f42f788e92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediRember/ScreenBuilders/MedicijnIneemScermBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediRember/ScreenBuilders/MedicijnIneemScermBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MediRember/ScreenBuilders/inlogschermBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediRember/ScreenBuilders/inlogschermBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediRember/Utility/DbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediRember/Utility/DbConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediRember/Utility/Patiënt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediRember/Utility/Patiënt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScreenBuilders/CheckPatiëntenBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScreenBuilders/CheckPatiëntenBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScreenBuilders/MedicijnIneemScermBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScreenBuilders/MedicijnIneemScermBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/DbConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/DbConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/Patiënt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/Patiënt.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1089" />
+          <entry key="java" value="1222" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1089" />
+          <entry key="JAVA" value="1222" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -82,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="323">
+              <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -91,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/CheckPatiëntenBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="690">
               <caret line="75" column="65" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
             </state>
           </provider>
@@ -100,8 +94,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/MedicijnIneemScermBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+            <state relative-caret-position="288">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utility/MedicatieIneemMoment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utility/Dokter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="-68">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
@@ -123,10 +126,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java" />
         <option value="$PROJECT_DIR$/src/Utility/Patiënt.java" />
         <option value="$PROJECT_DIR$/src/ScreenBuilders/CheckPatiëntenBuilder.java" />
         <option value="$PROJECT_DIR$/src/Utility/DbConnector.java" />
+        <option value="$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java" />
         <option value="$PROJECT_DIR$/src/ScreenBuilders/MedicijnIneemScermBuilder.java" />
       </list>
     </option>
@@ -182,7 +185,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540726864999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540727433503" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ojdbc7.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -232,7 +235,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -240,7 +243,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,13 +278,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Utility/Dokter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -296,10 +292,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utility/Dokter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/CheckPatiëntenBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="690">
           <caret line="75" column="65" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utility/MedicatieIneemMoment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -310,17 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/inlogschermBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ScreenBuilders/MedicijnIneemScermBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        <state relative-caret-position="288">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>

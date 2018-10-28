@@ -18,31 +18,38 @@ import Utility.DbConnector;
 import java.sql.ResultSet;
 
 
-public class inlogschermBuilder {
+public class InlogschermBuilder {
     private DbConnector dbConnector;
     private TextField loginnaamTxt;
     private TextField wachtwoordTxt;
+    public static Font groteLetters = new Font("Arial",20);
     /**
      * deze klasse bouwt het inlogscherm
      */
-    public inlogschermBuilder(Scene scene, GridPane inlogscherm, DbConnector dbConnector)
+    public InlogschermBuilder(Scene scene, GridPane inlogscherm, DbConnector dbConnector)
     {
+
         this.dbConnector = dbConnector;
         Label foutmeldinglbl = new Label("");
 
         Label loginnaamLbl = new Label("inlognaam: ");
         loginnaamTxt = new TextField();
+        loginnaamLbl.setFont(groteLetters);
 
         Label wachtwoordLbl = new Label("wachtwoord: ");
          wachtwoordTxt = new TextField();
+         wachtwoordLbl.setFont(groteLetters);
 
         CheckBox isPatiëntChB = new CheckBox();
         Label isPatiëntLbl = new Label("patiënt:");
+        isPatiëntLbl.setFont(groteLetters);
 
         CheckBox isDokterChb = new CheckBox();
         Label isDokterLbl = new Label("dokter:");
+        isDokterLbl.setFont(groteLetters);
 
         Button inloggenBtn = new Button("log in");
+        inloggenBtn.setFont(groteLetters);
 
         inloggenBtn.setOnAction(event -> {
         if(!isPatiëntChB.isSelected() && !isDokterChb.isSelected())

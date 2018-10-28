@@ -1,6 +1,6 @@
 package Main;
 
-import ScreenBuilders.inlogschermBuilder;
+import ScreenBuilders.InlogschermBuilder;
 import Utility.DbConnector;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -14,7 +14,7 @@ public class Main extends Application {
         GridPane inlogscherm = new GridPane();
         dbConnector = new DbConnector();
         Scene scene = new Scene(inlogscherm,300,275);
-        new inlogschermBuilder(scene, inlogscherm, dbConnector);
+        new InlogschermBuilder(scene, inlogscherm, dbConnector);
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(scene);
         primaryStage.show();

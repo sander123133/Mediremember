@@ -26,14 +26,12 @@ public class DbConnector {
     public void voegIneemMomentToe(String inlognaamPatiënt, String medicijnNaam, int aantal, String tijd )
     {
         try {
-            Connection connCreator = createConnection();
-            PreparedStatement stmt = connCreator.prepareStatement("INSERT INTO PATIËNTMEDICIJN(TIJD,INLOGNAAMPATIËNT, MEDICIJNNAAM, AANTAL)" + "VALUES(?,?,?,?)");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO PATIËNTMEDICIJN(TIJD,INLOGNAAMPATIËNT, MEDICIJNNAAM, AANTAL)" + "VALUES(?,?,?,?)");
             stmt.setString(2, inlognaamPatiënt);
             stmt.setString(3,medicijnNaam);
             stmt.setInt(4,aantal);
             stmt.setString(1,tijd);
             stmt.executeUpdate();
-            connCreator.close();
         }
         catch (Exception e)
         {

@@ -52,8 +52,14 @@ public class MedicijnIneemScermBuilder {
             Label medicijnBeschrijving = new Label();
             Medicijn medicijn = medicijnen.get(location);
             medicijnLabel.setText(medicijn.getNaam());
+            medicijnLabel.setFont(InlogschermBuilder.groteLetters);
+
             medicijnBeschrijving.setText(medicijn.getBeschrijving());
+            medicijnBeschrijving.setFont(InlogschermBuilder.groteLetters);
+
             Label aantalLbl = new Label("hoevel ingenomen: ");
+            aantalLbl.setFont(InlogschermBuilder.groteLetters);
+
             TextField aantalTxt = new TextField();
             Button neemIn = new Button("neem in");
             neemIn.setOnAction(event -> {
