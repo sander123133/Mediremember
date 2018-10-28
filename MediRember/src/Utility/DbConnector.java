@@ -23,7 +23,7 @@ public class DbConnector {
            return conn;
     }
 
-    public void insertRow(String inlognaamPatiënt, String medicijnNaam, int aantal, String tijd )
+    public void voegIneemMomentToe(String inlognaamPatiënt, String medicijnNaam, int aantal, String tijd )
     {
         try {
             Connection connCreator = createConnection();
@@ -46,7 +46,7 @@ public class DbConnector {
             Statement stmt = conn.createStatement();
             this.result = stmt.executeQuery(strSQL);
         } catch (Exception var3) {
-
+            var3.printStackTrace();
         }
 
         return this.result;

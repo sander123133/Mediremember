@@ -63,19 +63,17 @@ public class inlogschermBuilder {
                 Patiënt patiënt = null;
                 try {
                     while(patiëntdata.next()) {
-                        System.out.println(patiëntdata.getString(5));
                          patiënt = new Patiënt(patiëntdata.getString(1),patiëntdata.getString(2),
-                                patiëntdata.getString(3), patiëntdata.getString(4),patiëntdata.getString(5));
-                        querry = "SELECT * FROM MEDICIJN WHERE Medicijnnaam = '" + patiëntdata.getString(5) + "'";
-                        medicijndata = dbConnector.getData(querry);
+                                patiëntdata.getString(3), patiëntdata.getString(4));
+
                     }
                 }
                 catch (Exception e)
                 {
                     e.printStackTrace();
                 }
-                FlowPane medicijnIneemScherm = new FlowPane();
-                new MedicijnIneemScermBuilder(medicijnIneemScherm,patiënt,medicijndata, dbConnector);
+                BorderPane medicijnIneemScherm = new BorderPane();
+                new MedicijnIneemScermBuilder(medicijnIneemScherm,patiënt, dbConnector);
                 Stage medicijnStage = new Stage();
                 medicijnStage.setTitle("patiënt scherm");
                 medicijnStage.setScene(new Scene(medicijnIneemScherm,1000,1000));

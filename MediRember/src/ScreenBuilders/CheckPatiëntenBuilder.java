@@ -73,7 +73,7 @@ public class CheckPatiëntenBuilder {
         while(patiënten.next())
         {
             patiëntenLijst.add(new Patiënt(patiënten.getString(1),patiënten.getString(2),
-                    patiënten.getString(3),patiënten.getString(4),patiënten.getString(5)));
+                    patiënten.getString(3),patiënten.getString(4)));
         }
 
         for(Patiënt p : patiëntenLijst)

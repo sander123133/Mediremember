@@ -5,14 +5,13 @@ public class Patiënt {
     private String wachtwoord;
     private String naam;
     private String naamDokter;
-    private String medicijnNaam;
 
-    public Patiënt(String inlognaam, String wachtwoord, String naam, String naamDokter, String medicijnNaam) {
+    public Patiënt(String inlognaam, String wachtwoord, String naam, String naamDokter) {
         this.inlognaam = inlognaam;
         this.wachtwoord = wachtwoord;
         this.naam = naam;
         this.naamDokter = naamDokter;
-        this.medicijnNaam = medicijnNaam;
+
     }
 
     public String getInlognaam() {
@@ -47,11 +46,5 @@ public class Patiënt {
         this.naamDokter = naamDokter;
     }
 
-    public String getMedicijnNaam() {
-        return medicijnNaam;
-    }
 
-    public void setMedicijnNaam(String medicijnNaam) {
-        this.medicijnNaam = medicijnNaam;
-    }
 }
