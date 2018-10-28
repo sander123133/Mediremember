@@ -18,6 +18,7 @@ public class DbConnector {
             conn = DriverManager.getConnection(strConnString, "DOKTER+", "123456789");
         } catch (Exception var3) {
             System.out.println("OOF");
+            var3.printStackTrace();
         }
            return conn;
     }
