@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         GridPane inlogscherm = new GridPane();
         dbConnector = new DbConnector();
-        Scene scene = new Scene(inlogscherm,300,275);
+        Scene scene = new Scene(inlogscherm,450,275);
         new InlogschermBuilder(scene, inlogscherm, dbConnector);
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(scene);

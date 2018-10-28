@@ -1,12 +1,29 @@
 package Utility;
 
+import ScreenBuilders.InlogschermBuilder;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+
 import java.sql.*;
 
 public class DbConnector {
-    ResultSet result = null;
-    Connection conn;
+    private ResultSet result = null;
+    private Connection conn;
+    private Stage succesStage = new Stage();
     public DbConnector() {
-    createConnection();
+        VBox pane = new VBox();
+        Label succeslbl = new Label("Het versturen van het inneemmoment is gelukt");
+        succeslbl.setFont(InlogschermBuilder.groteLetters);
+        Button succesBtn = new Button("OK");
+        succesBtn.setOnAction(event -> succesStage.close());
+        pane.getChildren().addAll(succeslbl,succesBtn);
+        succesStage.setTitle("succes");
+        succesStage.setScene(new Scene(pane,500,120));
+        createConnection();
     }
 
     private Connection createConnection() {
@@ -32,6 +49,7 @@ public class DbConnector {
             stmt.setInt(4,aantal);
             stmt.setString(1,tijd);
             stmt.executeUpdate();
+            succesStage.show();
         }
         catch (Exception e)
         {

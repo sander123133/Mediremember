@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
 import Utility.DbConnector;
 
+import java.awt.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
@@ -21,7 +22,7 @@ public class MedicijnIneemScermBuilder {
     {
         BorderPane patiëntInfoScherm = new BorderPane();
         FlowPane northPane = new FlowPane();
-        GridPane centerPane = new GridPane();
+        FlowPane centerPane = new FlowPane();
         medicijnen = new ArrayList<>();
 
 
@@ -48,7 +49,9 @@ public class MedicijnIneemScermBuilder {
 
         for(int location = 0; location < medicijnen.size(); location++) {
             VBox medicijnIneemPane = new VBox();
+            medicijnIneemPane.setSpacing(10.0);
             Label medicijnLabel = new Label();
+
             Label medicijnBeschrijving = new Label();
             Medicijn medicijn = medicijnen.get(location);
             medicijnLabel.setText(medicijn.getNaam());
@@ -57,18 +60,19 @@ public class MedicijnIneemScermBuilder {
             medicijnBeschrijving.setText(medicijn.getBeschrijving());
             medicijnBeschrijving.setFont(InlogschermBuilder.groteLetters);
 
-            Label aantalLbl = new Label("hoevel ingenomen: ");
+            Label aantalLbl = new Label("hoeveel ingenomen: ");
             aantalLbl.setFont(InlogschermBuilder.groteLetters);
-
             TextField aantalTxt = new TextField();
-            Button neemIn = new Button("neem in");
+            aantalTxt.prefHeight(30);
+            Button neemIn = new Button("verstuur");
             neemIn.setOnAction(event -> {
                 LocalDateTime now = LocalDateTime.now();
                 DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
                 dbConnector.voegIneemMomentToe(patiënt.getInlognaam(),medicijn.getNaam(),Integer.parseInt(aantalTxt.getText()),now.format(format));
             });
             medicijnIneemPane.getChildren().addAll(medicijnLabel,medicijnBeschrijving,aantalLbl,aantalTxt,neemIn);
-            centerPane.add(medicijnIneemPane,location,0);
+            centerPane.getChildren().add(medicijnIneemPane);
+
         }
         patiëntNaam.setText("naam patiënt: " + patiënt.getNaam());
         naamDokter.setText("naam doktor: " + patiënt.getNaamDokter());
